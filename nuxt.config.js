@@ -3,7 +3,7 @@ export default {
   mode: 'spa',
 
   router: {
-    base: 'https://leroyraymon.github.io/blog/',
+    base: 'https://leroyraymon.github.io/note/',
     mode: 'hash'
   },
 
@@ -11,7 +11,7 @@ export default {
   ** Headers of the page
   */
   head: {
-    title: '博客',
+    title: 'ノート',
     meta: [
       { charset: 'utf-8' },
       { name: 'viewport', content: 'width=device-width, initial-scale=1' },
@@ -63,7 +63,7 @@ export default {
   },
   env: {
     owner: 'leroyraymon',
-    repo: 'blog',
+    repo: 'note',
     githubClientId: '08014041b70c0e2a14eb',
     githubClientSecret: 'e8c8c8173eadd1f4874bf073a156208829571109'
   }
