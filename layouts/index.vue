@@ -20,13 +20,13 @@
 <script>
 import HomeHead from "@/components/HomeHead/index";
 import HomeFooter from "@/components/HomeFooter/index";
-import zhCN from 'ant-design-vue/es/locale/zh_CN';
+import jaJP from 'ant-design-vue/es/locale/ja_JP';
 export default {
   transition: "page",
   components: { HomeHead, HomeFooter },
   data() {
     return {
-      locale: zhCN,
+      locale: jaJP,
     };
   }
 };
@@ -34,8 +34,8 @@ export default {
 
 <style scoped>
 .content {
-  background: #a8c2a4 url('../assets/img/pagebg.jpg') no-repeat center;
-  padding: 90px 0 0 0;
+  background: #fff;
+  padding: 60px 0 0 0;
   min-height: 90em;
 }
 .ant-layout-header {
@@ -43,6 +43,7 @@ export default {
   z-index: 1009;
   padding: 0;
   width: 100%;
+  height: 50px;
 }
 .ant-back-top {
   bottom: 120px;

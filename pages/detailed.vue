@@ -1,20 +1,7 @@
 <template>
   <a-layout>
     <a-layout-content>
-      <div class="ley-well well-sm bg-light-peach text-white">
-        <a-icon type="read" />
-        <span class="ispan">博客文章内容</span>
-      </div>
-      <div class="ley-form-default margin-top margin-bottom">
-        <a-skeleton :loading="blogLoading" style="float: right;" active avatar :paragraph="{rows: 1}">
-          <a-list-item-meta>
-            <template slot="description">
-              <span>发布时间：{{blogData.created_at | formatDate('yyyy-MM-dd')}}</span><span class="margin-lfrg">评论：{{blogData.comments? `已有 ${blogData.comments} 条评论`: '还没有人评论'}}</span>
-            </template>
-            <a slot="title" :href="blogData.user.html_url" target="_blank">发布者：{{blogData.user.login}}</a>
-            <a-avatar slot="avatar" :src="blogData.user.avatar_url" />
-          </a-list-item-meta>
-        </a-skeleton>
+      <div class="margin-bottom">
         <a-skeleton :loading="blogLoading" style="float: left;" active>
           <div class="markdown-body">
             <h3 class="title">{{blogData.title}}</h3>
@@ -68,14 +55,15 @@ export default {
 <style scoped>
 .markdown-body {
   min-height: 90px;
-  padding: 20px;
+  /* padding: 20px; */
   width: 100%;
+  font-size: 12px;
 }
 .markdown-body .title {
   text-align: center;
-  font-size: 18px;
+  font-size: 14px;
   font-weight: bold;
-  margin-bottom: 30px;
+  margin-bottom: 10px;
 }
 ::v-deep .markdown-body pre {
   padding: 16px;
@@ -90,7 +78,7 @@ export default {
 }
 ::v-deep .markdown-body h3 {
   font-size: 16px;
-  margin-top: 24px;
+  margin-top: 10px;
   margin-bottom: 16px;
   font-weight: 600;
   line-height: 1.25;

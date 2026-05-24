@@ -3,7 +3,8 @@ export default {
   mode: 'spa',
 
   router: {
-    base: 'https://leroyraymon.github.io/note/',
+    //base: 'https://leroyraymon.github.io/note/',
+    base: '/note',
     mode: 'hash'
   },
 

@@ -41,10 +41,10 @@ ol, ul, dl{
  * Nav
  */ 
 .ley-nav {
-  background: #26384b;
+  background: #ecebeb;
   padding: 0;
-  height: 68px;
-  box-shadow: 0px 0px 0px 2px #ffa800;
+  height: 49px;
+  box-shadow: 0px 0px 0px 1px #cbcbcb;
 }
 
  /*
@@ -143,6 +143,8 @@ ol, ul, dl{
   min-height: 20px;
   padding: 15px;
   border-radius: 6px;
+  border: 1px solid #cbcbcb;
+  font-size: 12px;
  }
  .ley-well.well-sm {
   padding: 10px;
@@ -457,12 +459,15 @@ ol, ul, dl{
 .ley-blackboard{
   position: relative;
   margin: 0 auto;
-  padding: 3.2em 1em 1em;
-  background-color: #F0F8FF;
-  color: #fff;
-  border: 3px solid #F99F48;
+  padding: 0 10px 0 10px;
+  background-color: #fff;
+  /* color: #fff; */
+  border: 1px solid #cbcbcb;
   border-radius: 5px;
-  box-shadow: 0 0 5px #a8c2a4, 0 0 5px #555 inset;
+  /* box-shadow: 0 0 5px #a8c2a4, 0 0 1px #555 inset; */
+}
+.ley-blackboard *{
+  font-size: 12px;
 }
 .ley-blackboard::before,.ley-blackboard::after {
   position: absolute;
@@ -475,7 +480,7 @@ ol, ul, dl{
   top: .5em;
   font-weight: bold;
   font-size: 1.2em;
-  color: #F43E43;
+  /* color: #F43E43; */
 }
 
 /*
@@ -691,7 +696,7 @@ ol, ul, dl{
   margin: 0 !important;
 }
 .margin-top{
-  margin-top: 20px;
+  margin-top: 10px;
 }
 .margin-left{
   margin-left: 20px;

@@ -1,18 +1,17 @@
 <template>
   <a-layout>
     <a-layout-content>
-      <div class="ley-well well-sm bg-light-peach text-white">
+      <div class="ley-well well-sm bg-gray">
         <a-icon type="read" />
-        <span class="ispan">博客文章列表</span>
+        <span class="ispan">リスト</span>
       </div>
 
       <div class="ley-blackboard margin-top margin-bottom">
-        <div class="title">文章列表</div>
-        <a-list itemLayout="vertical" :dataSource="blogListData" :pagination="pagination" :loading="{spinning: blogListLoading,tip: '加载中...'}">
+        <a-list itemLayout="vertical" :dataSource="blogListData" :pagination="pagination" :loading="{spinning: blogListLoading,tip: '読み込み中...'}">
           <a-list-item slot="renderItem" slot-scope="item, index">
             <a-list-item-meta>
               <a slot="title" class="text-bold" @click="doDetailed(item.number)">{{ item.number + '. ' + item.title}}</a>
-              <template slot="description">
+              <!-- <template slot="description">
                 <span>
                   <a-icon type="calendar" style="margin-right: 8px" />{{item.created_at | formatDate('yyyy-MM-dd')}}
                 </span>
@@ -24,17 +23,17 @@
                 <span v-for="(ite, i) in item.labels">
                   <a-tag v-bind:color="'#' + ite.color">{{ ite.name }}</a-tag>
                 </span>
-              </template>
+              </template> -->
             </a-list-item-meta>
           </a-list-item>
         </a-list>
       </div>
 
     </a-layout-content>
-    <a-layout-sider width="300" breakpoint="lg" collapsedWidth="0" :trigger="null">
+    <!-- <a-layout-sider width="300" breakpoint="lg" collapsedWidth="0" :trigger="null">
       <div class="ley-well bg-verdant text-white" style="width:280px; float:right;">
         <a-icon type="read" />
-        <span class="ispan">博客文章分类</span>
+        <span class="ispan">分類</span>
         <div class="ley-well well-sm bg-gray margin-top">
           <a-skeleton :loading="labelListLoading" :title="false" :paragraph="{rows: 4}" active>
             <div>
@@ -46,7 +45,7 @@
           </a-skeleton>
         </div>
       </div>
-    </a-layout-sider>
+    </a-layout-sider> -->
 
   </a-layout>
 </template>
@@ -153,6 +152,12 @@ export default {
 }
 ::v-deep .ant-list-pagination {
   text-align: center;
+}
+.ant-list-item {
+  padding: 5px;
+}
+.ant-list-vertical .ant-list-item-meta-title{
+  margin-bottom: 0;
 }
 
 .ant-layout-sider {

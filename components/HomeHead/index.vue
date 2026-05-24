@@ -1,10 +1,10 @@
 <template>
   <div class="ley-nav">
     <div class="navHeader container">
-      <nuxt-link to="/" class="logo"></nuxt-link>
+      <!-- <nuxt-link to="/" class="logo"></nuxt-link> -->
       <ul class="listLink">
         <li>
-          <nuxt-link to="/">首页</nuxt-link>
+          <nuxt-link to="/">ガイド</nuxt-link>
         </li>
       </ul>
       <!-- <div class="headerRight">
@@ -21,7 +21,7 @@
 <style scoped>
 .navHeader .headerRight {
   float: right;
-  line-height: 68px;
+  line-height: 50px;
 }
 .navHeader .headerRight a {
   color: #ffd12f;
@@ -41,8 +41,8 @@
 .navHeader .logo {
   float: left;
   width: 138px;
-  height: 68px;
-  background: url('../../assets/img/logo.png') no-repeat center;
+  height: 50px;
+  /* background: url('../../assets/img/logo.png') no-repeat center; */
   background-size: 140px 38px;
 }
 .navHeader .listLink {
@@ -51,13 +51,13 @@
 .navHeader .listLink li a {
   float: left;
   font-weight: bold;
-  font-size: 17px;
-  line-height: 68px;
-  margin-left: 30px;
+  font-size: 13px;
+  line-height: 50px;
+  /* margin-left: 30px; */
   cursor: pointer;
-  color: #ffd12f;
+  color: #000;
 }
 .navHeader .listLink li a:hover {
-  color: #fff;
+  color: #3366FF;
 }
 </style>
