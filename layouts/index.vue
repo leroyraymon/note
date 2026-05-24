@@ -10,9 +10,9 @@
           <a-back-top />
         </a-layout-content>
       </a-layout>
-      <a-layout-footer>
+      <!-- <a-layout-footer>
         <home-footer></home-footer>
-      </a-layout-footer>
+      </a-layout-footer> -->
     </a-layout>
   </a-config-provider>
 </template>
